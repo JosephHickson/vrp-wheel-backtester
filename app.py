@@ -97,7 +97,7 @@ for i in range(total_bars - HOLDING_DAYS):
         cost_basis -= premium
 
         if spot_exit < strike:
-            pnl = premium
+            pnl = 0.0
             outcome = "CALL OTM -> LOWERED BASIS"
         else:
             pnl = strike - cost_basis
