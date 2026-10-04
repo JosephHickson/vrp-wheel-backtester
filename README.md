@@ -1,5 +1,7 @@
 # Volatility Risk Premium (VRP) Harvesting Engine & Wheel State Machine
 
+[🎨 View Interactive Figma Workspace]([https://www.figma.com/file/YOUR_FILE_ID/...](https://www.figma.com/design/IpcHCwOhjpUdsnD4L1SN1x/Untitled?node-id=0-1&t=eqmylQqk3fr3Lwh5-1))
+
 ## Executive Summary
 This repository contains a discrete-time, path-dependent quantitative backtesting engine designed to harvest the Volatility Risk Premium (VRP). The system algorithmically underwrites variance (selling options) on MicroStrategy (`MSTR`) as a deep-history proxy for the 2x-leveraged ETF `MSTU`. 
 
