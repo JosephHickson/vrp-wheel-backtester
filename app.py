@@ -113,6 +113,10 @@ if trades:
     trade_df = pd.DataFrame(trades)
     trade_df["Cumulative_PnL"] = trade_df["PnL"].cumsum()
 
+    # ---> NEW JSON EXPORT LINES <---
+    trade_df.to_json("history.json", orient="records", date_format="iso")
+    print("history.json exported successfully!")
+
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Trades Executed", len(trade_df))
     col2.metric("Cumulative PnL (per share)", f"${trade_df['Cumulative_PnL'].iloc[-1]:.2f}")
